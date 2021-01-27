@@ -134,3 +134,9 @@ header nav a:hover {
     border-radius: .85rem;
     margin: 0.25rem;
 }
+
+@media(max-width: 1000px) {
+    :root {
+        background: springgreen;
+    }
+}
