@@ -1,1 +1,136 @@
-/* Add CSS styling here */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+:root {
+    box-sizing: border-box;
+    border: 10px ridge #cc3300;
+    font-size: 62.5%;
+    font-family: 'Indie Flower', cursive;
+    margin: 0.75rem;
+    background:#b3d0ff;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+button {
+    background: #006600;
+    border: .15rem solid black;
+    border-radius: 25%;
+    box-sizing: border-box;
+    font-size: 150%;
+    font-family: 'Indie Flower', cursive;
+    padding: 1rem;
+}
+
+button:hover {
+    background-color: #009900;
+}
+
+.container {
+    background: #798eaf;
+    border-radius: 1rem;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    margin: .5rem .5rem;
+}
+
+.container img {
+    border: .2rem ridge black;
+    border-radius: 1.25rem;
+    margin: 1rem;
+}
+
+.container div {
+    align-items: flex-start;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    margin: 0 auto;
+    margin-left: 5%;
+    width: 50%;
+}
+
+.container div h2 {
+    font-size: 3.75rem;
+}
+
+.container div p {
+    font-size: 2rem;
+    width: 75%;
+}
+
+footer {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background: #96b0d9;
+}
+
+footer p {
+    font-size: 2.5rem;
+    margin: .5rem auto;
+}
+
+footer button {
+    margin: .35rem;
+}
+
+section.gallery {
+    align-items: center;
+    background: #798eaf;
+    border-radius: 1rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 1rem;
+    
+}
+
+header {
+    background: #96b0d9;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 5.75rem;
+    padding: 1rem 2.5rem 4rem;
+}
+
+header nav {
+    text-align: left;
+    padding: 0 2.5rem 2.5rem;
+}
+
+header nav a {
+    border: .15rem solid black;
+    border-radius: 0.75rem;
+    background: #009900;
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
+
+header nav a:hover {
+    background: #00b300;
+}
+
+.images div {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.images img {
+    border: .25rem solid black;
+    border-radius: .85rem;
+    margin: 0.25rem;
+}
