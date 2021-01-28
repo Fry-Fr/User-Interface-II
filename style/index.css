@@ -26,6 +26,7 @@ button {
 
 button:hover {
     background-color: #009900;
+    box-shadow: .45em .35em .35em #001E00;
 }
 
 .container {
@@ -59,7 +60,6 @@ button:hover {
 
 .container div p {
     font-size: 2rem;
-    width: 75%;
 }
 
 footer {
@@ -77,19 +77,7 @@ footer p {
 }
 
 footer button {
-    margin: .35rem;
-}
-
-section.gallery {
-    align-items: center;
-    background: #798eaf;
-    border-radius: 1rem;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    margin: 0.5rem;
-    padding: 1rem;
-    
+    margin: .75em auto;
 }
 
 header {
@@ -122,10 +110,10 @@ header nav a:hover {
     background: #00b300;
 }
 
-.images div {
+div.images {
     display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
+    flex-flow: row wrap;
+    justify-content: center;
     align-items: center;
 }
 
@@ -133,4 +121,104 @@ header nav a:hover {
     border: .25rem solid black;
     border-radius: .85rem;
     margin: 0.25rem;
+}
+
+section.gallery {
+    align-items: center;
+    background: #798eaf;
+    border-radius: 1rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin: 0.5rem;
+    padding: 1rem;
+    
+}
+
+@media(max-width: 800px) {
+    :root {
+        font-size: 1.75vw;
+    }
+    button {
+        box-shadow: 0 -.05em .75em .15em #001E00;
+    }
+    button:hover {
+        box-shadow: 0 -.05em .75em .15em #001E00;
+    }
+    .container {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .container img {
+        border: .25rem ridge;
+        width: 25vw;
+    }
+    .container div {
+        align-items: center;
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        width: 50%;
+    }
+    .container div h2 {
+        font-size: 4.75rem;
+    }
+    .container div p {
+        font-size: 2.5rem;
+        margin: 1.25rem auto;
+        text-align: center;
+        width: 75%;
+    }
+    .container button {
+        margin: 0 auto 1rem;
+    }
+    footer button {
+        margin: .75em 0;
+    }
+    .images {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10%;
+    }
+    .images img {
+        width: 45%;
+    }
+}
+
+@media(max-width: 500px) {
+    :root {
+        font-size: 1.75vw;
+    }
+    .images img {
+        width: 45%;
+    }
+    .container {
+        align-items: center;
+    }
+    .container div h2 {
+        font-size: 5rem;
+        text-align: center;
+    }
+    .container div p {
+        font-size: 3rem;
+        line-height: 4rem;
+        text-align: right;
+        width: 100%;
+    }
+    header {
+        flex-flow: row;
+    }
+    header h1 {
+        text-align: center;
+    }
+    header nav {
+        display: flex;
+        flex-flow: column;
+        margin: 1rem auto 0;
+    }
 }
